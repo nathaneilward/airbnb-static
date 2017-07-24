@@ -2,9 +2,112 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+  <div class="welcome text-center padded">
+    <h1>Welcome to Middleman</h1>
+    <p class="doc">
+      <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+    </p>
+  </div>
+
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+    <div class="banner-content">
+      <h1>WELCOME HOME</h1>
+      <p>Rent unique places to stay from local hosts in 190+ countries.
+      </p>
+      <a class="btn btn-primary btn-lg">How it works</a>
+    </div>
+  </div>
+  <div class="text-center padded features">
+    <%= image_tag "images/globe.png", class: "features-h2" %>
+    <!-- <img src="images/globe.png" alt="globe" width=100px> -->
+    <h2 class="features-h2">
+      Discover the world
+    </h2>
+    <p>
+      The earth is your new home.
+    </p>
+    <%= image_tag "images/dollar.png", class: "features-h2" %>
+    <!-- <img src="images/dollar.png" alt="dollar" width=100px> -->
+    <h2 class="features-h2">
+      Pay online
+    </h2>
+    <p>
+      No cash issues anymore.
+    </p>
+    <%= image_tag "images/beer.png", class: "features-h2" %>
+    <!-- <img src="images/beer.png" alt="beer" width=100px> -->
+    <h2 class="features-h2">
+      Meet people
+    </h2>
+    <p>
+      Discover new culture and lifestyle.
+    </p>
+    <%= image_tag "images/heart.png", class: "features-h2" %>
+    <!-- <img src="images/heart.png" alt="heart" width=100px> -->
+    <h2 class="features-h2">
+      Share and love
+    </h2>
+    <p>
+      Join a community you will love.
+    </p>
+  </div>
+  <div class="text-center wrapper-grey padded">
+    <h2>Your next trip</h2>
+    <div class="container">
+     <div class="row">
+       <div class="col-xs-12 col-md-4">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+          <div class="card-category">Paris</div>
+          <div class="card-description">
+            <h2>Seb's home</h2>
+            <p>Charming room with patio</p>
+          </div>
+          <%= image_tag "images/seb.jpeg", class: "card-user avatar" %>
+          <!-- <img class="card-user avatar" src="images/seb.jpg"> -->
+          <%= link_to "Meet the team", "#", class: "card-link" %>
+          <!-- <a class="card-link" href="#" ></a> -->
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+          <div class="card-category">Brussels</div>
+          <div class="card-description">
+            <h2>Anne's home</h2>
+            <p>Lovely house</p>
+          </div>
+          <%= image_tag "images/anne.jpeg", class: "card-user avatar" %>
+          <!-- <img class="card-user avatar" src="images/anne.jpeg"> -->
+          <%= link_to "Meet the team", "#", class: "card-link" %>
+          <!-- <a class="card-link" href="#" ></a> -->
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+          <div class="card-category">London</div>
+          <div class="card-description">
+            <h2>Romain's home</h2>
+            <p>Nice flat in Piccadilly</p>
+          </div>
+          <%= image_tag "images/romain.jpeg", class: "card-user avatar" %>
+          <!-- <img class="card-user avatar" src="images/romain.jpeg"> -->
+          <%= link_to "Meet the team", "#", class: "card-link" %>
+          <!-- <a class="card-link" href="#" ></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="text-center">
+  <h2 class="bottom-input-h2">
+    Get news from us
+  </h2>
+  <p>
+    Leave us your mail and get news from us
+  </p>
+  <form action="#" class="form-inline">
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="bob.gmail.com">
+    </div>
+    <input type="submit" value="Subscribe" class="btn btn-primary">
+  </form>
+
